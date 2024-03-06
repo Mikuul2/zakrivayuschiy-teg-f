@@ -394,6 +394,10 @@
   margin-block-end: 100px;
   background-color: var(--theme-color);
   outline: var(--outline);
+  @media (min-width: 700px) {
+    flex-direction: row;
+    max-inline-size: 335px;
+  }
 }
 
 .floppy-icon {
@@ -404,6 +408,17 @@
   margin-block-end: 8px;
   color: var(--button-text-color);
   mix-blend-mode: difference;
+}
+
+.save-button .floppy-icon {
+  inline-size: 28px;
+  block-size: 28px;
+  @media (min-width: 700px) {
+    inline-size: 21px;
+    block-size: 21px;
+    margin: 0;
+    margin-inline-end: 8px;
+  }
 }
 
 .save-window {
