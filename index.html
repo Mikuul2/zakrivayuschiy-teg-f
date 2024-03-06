@@ -268,9 +268,12 @@
           </svg>
           <h2 class="save-window__title">Вставьте дискету, чтобы продолжить</h2>
         </div>
-        <button class="save-window__close-button button-transformation" type="button" onclick="window['dialog-id'].close()">
-          <span class="button__text">Ок</span>
-        </button>
+        <form method="dialog">
+          <button class="save-window__close-button button-transformation" type="button" onclick="window['dialog-id'].close()">
+            <span class="button__text">Ок</span>
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </form>
     </dialog> 
     </main>
     <script src="./scripts/like.js">
