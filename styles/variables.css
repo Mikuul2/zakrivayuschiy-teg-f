@@ -22,4 +22,6 @@
   linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   /* outline */
   --outline: 2px solid var(--main-color);
+  /* layout */
+  --inline-size: clamp(371px, 100%, 700px);
 }
