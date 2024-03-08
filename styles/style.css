@@ -339,10 +339,16 @@
 }
 
 .save-window {
-  max-inline-size: 341px;
+  min-inline-size: 341px;
+  min-block-size: 191px;
   padding: 30px 40px;
   background-color: var(--theme-color);
   color: var(--main-color);
+  @media (min-width: 700px) {
+    padding: 30px;
+    min-inline-size: 357px;
+    min-block-size: 193px;
+  }
 }
 
 .save-window__content {
