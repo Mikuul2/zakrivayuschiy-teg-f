@@ -261,7 +261,7 @@
   font-size: var(--text-size);
   padding-block-start: 10.5px;
   padding-block-end: 10.5px;
-  min-inline-size: 126px;
+  min-inline-size: 130px;
   align-self: flex-end;
   margin-inline-end: 25px;
   border: var(--outline);
@@ -305,7 +305,7 @@
   line-height: 90%;
   align-items: center;
   padding: 15px 20px;
-  min-inline-size: 306px;
+  min-inline-size: 310px;
   min-block-size: 84px;
   margin-block-start: 2px;
   margin-block-end: 100px;
@@ -314,7 +314,7 @@
   transition: box-shadow 0.3s;
   @media (min-width: 700px) {
     flex-direction: row;
-    min-inline-size: 335px;
+    min-inline-size: 339px;
     min-block-size: 55px;
   }
 }
