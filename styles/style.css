@@ -268,8 +268,9 @@
   transition: box-shadow 0.3s;
 }
 
-.card__like-button:focus {
-  box-shadow: 3px 3px 0 0 var(--main-color);
+.button-transformation:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--main-color);
 }
 
 .button-transformation::after {
@@ -309,7 +310,8 @@
   margin-block-start: 2px;
   margin-block-end: 100px;
   background-color: var(--theme-color);
-  outline: var(--outline);
+  border: var(--outline);
+  transition: box-shadow 0.3s;
   @media (min-width: 700px) {
     flex-direction: row;
     min-inline-size: 335px;
@@ -344,6 +346,8 @@
   padding: 30px 40px;
   background-color: var(--theme-color);
   color: var(--main-color);
+  border: none;
+  outline: var(--outline);
   @media (min-width: 700px) {
     padding: 30px;
     min-inline-size: 357px;
@@ -374,12 +378,13 @@
 .save-window__close-button {
   position: relative;
   inline-size: 100%;
-  padding: 9px 0;
-  outline: var(--outline);
+  padding: 12.5px 0;
+  border: var(--outline);
   font-family: var(--accent-font);
   font-size: var(--text-size);
   text-transform: uppercase;
   line-height: 90%;
+  transition: box-shadow 0.3s;
 }
 
 dialog::backdrop {
